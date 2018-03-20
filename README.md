@@ -1,18 +1,45 @@
 # Instructions for running this server locally
 1) Install [NodeJS](https://nodejs.org/)
+
 2) Install AngularCLI
 ~~~
 npm install @angular/cli@latest -g
 ~~~
-3) Download or clone this repository
-4) Open the NodeJS Terminal. Run `npm install` to add the needed ExpressJS files into the node_modules folder
-5) Run 
+
+3) Install nodemon
+~~~
+npm install -g nodemon
+~~~
+
+4) Download or clone this repository
+
+5) Open the NodeJS Terminal. Run 
+~~~
+npm install
+~~~
+ to add the needed files into the node_modules folder
+
+6) Run 
 ~~~
 ng build
 ~~~
 to compile the Angular front-end components into the `dist` folder
-5) Run `node server.js`
-6) Open [localhost:3000](http://localhost:3000/) in your browser. You should see a basic Angular app displayed. You are now running a local server. 
+
+7) Run 
+
+~~~
+node server.js
+~~~
+
+**NOTE: You can also run the following command to have the Angular built and server restarted when code changes**
+~~~
+npm start-dev
+~~~
+
+8) Open [localhost:3000](http://localhost:3000/) in your browser. You should see a basic Angular app displayed. You are now running a local server. 
+
+
+
 
 # How this app was created
 ## Install Angular
@@ -24,8 +51,13 @@ npm install @angular/cli@latest -g
 ~~~
 npm install --save-dev typescript@2.6.2
 ~~~
+## Create the app
+~~~
+ng new app-name-goes-here
+~~~
 ## Compile Angular and check that it works
 ~~~
+cd app-name-goes-here
 ng serve
 ~~~
 Visit [http:localhost:4200](http:localhost:4200)
@@ -34,6 +66,10 @@ Visit [http:localhost:4200](http:localhost:4200)
 npm install express body-parser --save
 ~~~
 ## Add the server.js file
+
+
+
+# NOTE: the below information was created as part of the 'ng build' process
 
 # SimplestAngularNodejsServer
 
